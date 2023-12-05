@@ -2,7 +2,7 @@
 # GIỚI THIỆU
 - Đây là restful API về ecommerce được code bởi một mình tôi và tôi đã sử dụng spring boot để viết ra chương trình này
 - Test bằng Post Man
-  ########################################################################################################################################################################################################
+  ##########################################################################
   # CÁC CHỨC NĂNG TRONG RESTFUL API
   1. Tương tác với cở sở dữ liệu mysql bằng interface JpaRepository bằng cách sử dụng @Entity và @Table cho những model class
   2. Sử dụng JWT service để authentication user để test (/auth/me)
@@ -16,11 +16,11 @@
     - Riêng email thì phải chuẩn form email (xxx@xxx)
     - Password phải có patterm ít nhất một chữa hoa, 1 số
     - Size của mỗi field là từ [3,100]
-  ########################################################################################################################
+  ##############################################################################
   Link thiết kế cơ sở dữ liệu https://dbdiagram.io/d/Ecommerce-diagram-db-656940303be149578717b96a
 #####################################################################################
 I. lưu ý hãy dùng file query db.sql để insert data để dễ dàng có các infor address, product, weborder ... (trừ LocalUser vì cái này mình phải dùng post man để vào link đăng ký >.<)
-###########################################################################################################################################################################################
+######################################################################
 III CÁC BƯỚC SỬ DỤNG RESTFUL API III
 0. tải smtp4dev https://github.com/rnwood/smtp4dev/releases/download/3.2.0-ci20221023104/Rnwood.Smtp4dev.Desktop-win-x64-3.2.0-ci20221023104.zip
 1. khởi động smtp4dv
