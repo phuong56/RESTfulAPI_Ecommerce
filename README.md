@@ -19,9 +19,9 @@
   ########################################################################################################################
   Link thiết kế cơ sở dữ liệu https://dbdiagram.io/d/Ecommerce-diagram-db-656940303be149578717b96a
 #####################################################################################
-1. lưu ý hãy dùng file query db.sql để insert data để dễ dàng có các infor address, product, weborder ... (trừ LocalUser vì cái này mình phải dùng post man để vào link đăng ký >.<)
+I. lưu ý hãy dùng file query db.sql để insert data để dễ dàng có các infor address, product, weborder ... (trừ LocalUser vì cái này mình phải dùng post man để vào link đăng ký >.<)
 ###########################################################################################################################################################################################
-III CÁC BƯỚC SỬ DỤNG RESTFUL API#
+III CÁC BƯỚC SỬ DỤNG RESTFUL API III
 0. tải smtp4dev https://github.com/rnwood/smtp4dev/releases/download/3.2.0-ci20221023104/Rnwood.Smtp4dev.Desktop-win-x64-3.2.0-ci20221023104.zip
 1. khởi động smtp4dv
 2. chạy đoạn code trong IDE
