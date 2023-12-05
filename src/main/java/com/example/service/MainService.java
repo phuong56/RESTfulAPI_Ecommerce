@@ -56,10 +56,7 @@ public class MainService {
 		localUser.setEmail(registerBody.getEmail());
 		localUser.setCity(registerBody.getCity());
 		localUser.setCountry(registerBody.getCountry());
-		VerificationToken verificationToken =new VerificationToken();
-		verificationToken.setLocalUser(localUser);
-		emailService.sendVerificationEmail(verificationToken);
-		verificationTokenRepository.save(verificationToken);
+		localUser.setEmailVerified(false);
 		repository.save(localUser);
 		return localUser;
 	}
@@ -75,8 +72,12 @@ public class MainService {
 		if(opUser.isPresent()) {
 			LocalUser localUser= opUser.get();
 			if(encryptionService.verifyPassword(loginBody.getPassword(), localUser.getPassword())) {
-				if(localUser.getEmailVerified())
+				if(localUser.getEmailVerified()) {
+					System.out.println("email verified");
+					verificationTokenRepository.deleteAll();
 					return jwtService.generateJWT(localUser);
+				}
+					
 				else {
 					List<VerificationToken> verificationTokens =localUser.getVerificationTokens();
 					boolean resend =(verificationTokens.size()==0||

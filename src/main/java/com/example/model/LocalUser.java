@@ -22,12 +22,6 @@ public class LocalUser {
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     @Column(name ="id", nullable = false, unique = true)
     private Long id;
-    public Boolean getEmailVerified() {
-		return emailVerified;
-	}
-	public void setEmailVerified(Boolean emailVerified) {
-		this.emailVerified = emailVerified;
-	}
 	@Column(name="username", nullable = false, unique=true)
     private String username;
     @Column(name="password", nullable =false, length=1000)
@@ -54,6 +48,13 @@ public class LocalUser {
     
     @Column(name="email_verified", nullable=false)
     private Boolean emailVerified=false;
+    
+    public Boolean getEmailVerified() {
+		return emailVerified;
+	}
+	public void setEmailVerified(Boolean emailVerified) {
+		this.emailVerified = emailVerified;
+	}
     
     
 	public List<Address> getAddresses() {
