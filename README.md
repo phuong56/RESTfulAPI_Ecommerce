@@ -16,4 +16,7 @@
     - Riêng email thì phải chuẩn form email (xxx@xxx)
     - Password phải có patterm ít nhất một chữa hoa, 1 số
     - Size của mỗi field là từ [3,100]
+  ########################################################################################################################
   Link thiết kế cơ sở dữ liệu https://dbdiagram.io/d/Ecommerce-diagram-db-656940303be149578717b96a
+#####################################################################################
+1. lưu ý hãy dùng file query db.sql để insert data để dễ dàng có các infor address, product, weborder ... (trừ LocalUser vì cái này mình phải dùng post man để vào link đăng ký >.<)
